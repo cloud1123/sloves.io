@@ -32,6 +32,7 @@ header{
     border-radius: 35px;
     z-index: 1000;
     backdrop-filter: saturate(117%) blur(5px);
+    -webkit-backdrop-filter: saturate(117%) blur(5px);
     /*background-image: radial-gradient(circle at 50% -30%, #fff2, transparent);*/
     background-image: linear-gradient(rgba(255, 255, 255, 0.248), transparent);
 }
@@ -240,13 +241,26 @@ body {
     position: absolute;
 }
 
-/*.ufo{
+/*@keyframes ufo-flies{
+    0% {
+        transform: translateY(140vw);
+    }
+
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+.ufo{
     width: 200px;
     height: 200px;
     background-color: transparent;
     position: absolute;
     bottom: 60%;
     left: 50%;
+    animation: ufo-flies 15s;
+    animation-delay: 0s;
     z-index: -5;
 }
 
