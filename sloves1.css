@@ -241,26 +241,31 @@ body {
     position: absolute;
 }
 
-/*@keyframes ufo-flies{
-    0% {
-        transform: translateY(140vw);
-    }
 
 
-    100% {
-        transform: translateY(0);
+@keyframes ufo-flies {
+    0% {transform: rotate(10deg) translate(0);}
+    10%{transform: rotate(-10deg) translateX(10vw);}
+    20%{transform: rotate(15deg) translateX(20vw);}
+    30%{transform: rotate(-5deg) translateX(30vw);}
+    40%{transform: rotate(10deg) translateX(30vw) translateY(5vw);}
+    50%{transform: rotate(-5deg) translateX(50vw);}
+    60%{transform: rotate(5deg) translateX(60vw);}
+    70%{transform: rotate(-10deg) translateX(50vw);}
+    80% {transform: rotate(-20deg) translateX(70vw);}
+    90%{transform: rotate(-10deg) translateX(90vw);}
+    100%{transform: rotate(-15deg)translateX(200vw);}
     }
-}
+
 
 .ufo{
     width: 200px;
     height: 200px;
     background-color: transparent;
     position: absolute;
-    bottom: 60%;
-    left: 50%;
-    animation: ufo-flies 15s;
-    animation-delay: 0s;
+    bottom: 0%;
+    left: -400px;
+    animation: ufo-flies 10s ease forwards;
     z-index: -5;
 }
 
